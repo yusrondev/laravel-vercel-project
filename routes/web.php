@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/driver', [DriverController::class, 'index']);
+Route::get('/driver/create', [DriverController::class, 'create']);
+Route::post('/driver/store', [DriverController::class, 'store'])->name('driver.store');
