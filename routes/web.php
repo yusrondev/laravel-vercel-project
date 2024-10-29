@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Rotue::get('/driver', [DriverController::class, 'index']);
+Route::get('/driver', [DriverController::class, 'index']);
